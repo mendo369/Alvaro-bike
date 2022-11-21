@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,6 @@
 :root {
   --color-title: #001a49;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 body {
   height: 100%;
@@ -56,6 +55,10 @@ section {
   margin-bottom: 3em;
 }
 
+.title-section {
+  font-size: 2em;
+}
+
 h2 {
   width: fit-content;
   margin: auto;
@@ -81,13 +84,21 @@ h2 {
 }
 
 .service {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 3px 3px 10px #bebebe, -10px -10px 20px #ffffff;
   height: 150px;
   width: 60%;
   margin: 0 auto 1em;
-  border: 1px solid black;
+  padding: 10px 5px;
   display: grid;
   grid-template-columns: 30% 1fr;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.service:hover {
+  box-shadow: 3px 3px 10px #9c9c9c, -10px -10px 20px #ffffff;
 }
 
 .img-service {
@@ -103,6 +114,10 @@ h2 {
 .info-service {
   width: 80%;
   margin: auto;
+}
+
+.info-service h3 {
+  color: #1d293f;
 }
 
 .info-service p {
@@ -141,6 +156,10 @@ h2 {
   background-color: #ff7143;
 }
 
+.price-item h3 {
+  font-weight: 400;
+}
+
 .price-item p {
   font-weight: bold;
   color: #1d293f;
@@ -158,6 +177,10 @@ h2 {
   grid-auto-flow: row;
   gap: 1em;
   align-items: center;
+}
+
+.price-item ul li {
+  font-size: 1.2em;
 }
 
 /* FOOTER */
