@@ -83,6 +83,7 @@ h2 {
   border: 1px solid black;
   display: grid;
   grid-template-columns: 30% 1fr;
+  overflow: hidden;
 }
 
 .img-service {
