@@ -65,11 +65,15 @@ h2 {
   margin-bottom: 1em;
 }
 
+/* About */
+
 .about p {
   width: 60%;
   line-height: 1.4;
   margin: auto;
 }
+
+/* Services */
 
 .list-services {
   list-style: none;
@@ -104,6 +108,56 @@ h2 {
 .info-service p {
   margin-top: 10px;
   line-height: 1.4;
+}
+
+/* Prices */
+
+.price-list {
+  width: 90%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: space-evenly; /*da un espaciado hacia todas las esquinas*/
+  align-items: center;
+}
+
+.price-item {
+  width: 200px;
+  border-radius: 10px;
+  background-color: #e5e5f7;
+  text-align: center;
+  padding: 40px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em;
+  color: #696871;
+}
+
+.price-item--best {
+  color: white;
+  padding: 60px 40px;
+  background-color: #ff7143;
+}
+
+.price-item p {
+  font-weight: bold;
+  color: #1d293f;
+  font-size: 2.5em;
+}
+.price-item--best p {
+  color: white;
+  font-weight: bold;
+  font-size: 2.6em;
+}
+
+.price-item ul {
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em;
+  align-items: center;
 }
 
 /* FOOTER */
