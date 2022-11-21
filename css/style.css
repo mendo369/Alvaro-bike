@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+}
+
+:root {
+  --color-title: #001a49;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  padding-top: 40px;
+}
+.hero {
+  height: 50vh;
+  background-color: rgb(39, 62, 133);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 80%, 0 60%);
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url("../images/iniciar-un-taller-de-bicicletas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.name-store {
+  z-index: 10;
+  width: 100%;
+  background-color: rgb(19, 41, 109);
+  height: 40px;
+  position: fixed;
+  top: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.name-store h1 {
+  text-align: center;
+}
+
+/* MAIN */
+
+main {
+  height: 100%;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+h2 {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  color: var(--color-title);
+  border-bottom: 1px solid var(--color-title);
+  margin-bottom: 1em;
+}
+
+.about p {
+  width: 60%;
+  line-height: 1.4;
+  margin: auto;
+}
+
+.list-services {
+  list-style: none;
+  width: 100%;
+}
+
+.service {
+  height: 150px;
+  width: 60%;
+  margin: 0 auto 1em;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+.img-service {
+  height: 150px;
+  width: 100%;
+}
+
+.img-service img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-service {
+  width: 80%;
+  margin: auto;
+}
+
+.info-service p {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #001a49;
+  width: 100%;
+  height: 100px;
+}
