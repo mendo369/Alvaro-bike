@@ -287,8 +287,9 @@ footer {
   background-color: #001a49;
   width: 100%;
   height: fit-content;
-  margin-top: 7em;
+  margin-top: 6em;
   color: white;
+  padding: 2em 0;
 }
 
 .list-footer {
@@ -298,7 +299,27 @@ footer {
   width: fit-content;
   margin: auto;
   gap: 1.5em;
+  justify-content: space-evenly;
 }
 
-.list-item {
+@media (max-width: 360px) {
+  .paragraph {
+    width: 90%;
+  }
+
+  section {
+    width: 95%;
+    margin: auto;
+  }
+
+  .service {
+    width: 85%;
+    height: fit-content;
+    grid-auto-flow: row;
+    grid-template-columns: none;
+  }
+
+  .info-service h3 {
+    text-align: center;
+  }
 }
